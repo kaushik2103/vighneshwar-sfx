@@ -1332,7 +1332,7 @@ class ScrollTop {
 // ==========================================================================
 class ScrollReveal {
   constructor() {
-    this.elements = $$('.reveal');
+    this.elements = $$('.reveal, .stagger');
     if (this.elements.length === 0) return;
     
     // On file:// protocol, show all immediately (IntersectionObserver unreliable)
@@ -1354,6 +1354,15 @@ class ScrollReveal {
     });
     
     this.elements.forEach(el => this.observer.observe(el));
+    
+    // Check for elements already in viewport (e.g., on initial load)
+    this.elements.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('visible');
+        this.observer.unobserve(el);
+      }
+    });
   }
 }
 
