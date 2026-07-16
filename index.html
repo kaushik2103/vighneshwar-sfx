@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vighneshwar SFX & Fireworks Company - Transforming celebrations with spectacular special effects, pyrotechnics, and fireworks for weddings, concerts, corporate events, and festivals.">
+    <meta name="keywords" content="SFX, fireworks, pyrotechnics, wedding effects, concert effects, corporate events, festival effects, CO2 jets, cold pyrotechnics, flame effects">
+    <meta name="author" content="Vighneshwar SFX & Fireworks Company">
+    <meta property="og:title" content="Vighneshwar SFX & Fireworks Company">
+    <meta property="og:description" content="Transforming celebrations with spectacular special effects, pyrotechnics, and fireworks for weddings, concerts, corporate events, and festivals.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#D4A843">
+    <title>Vighneshwar SFX & Fireworks Company | Spectacular Effects for Unforgettable Events</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <canvas id="fireworks-canvas"></canvas>
+    
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    
+    <header class="header" id="header">
+        <nav class="nav container" id="nav">
+            <a href="#home" class="nav-logo" aria-label="Vighneshwar SFX & Fireworks Company - Home">
+                <!-- <span class="logo-icon" aria-hidden="true">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="16" cy="16" r="14" stroke="#D4A843" stroke-width="2"/>
+                        <path d="M16 4L18 12L26 12L19 17L21 25L16 20L11 25L13 17L6 12L14 12L16 4Z" fill="#D4A843"/>
+                    </svg>
+                </span> -->
+                <span class="logo-icon" aria-hidden="true">
+                    <img src="images/Main-logo.jpeg" alt="Vighneshwar SFX Logo" width="40" height="40" style="border-radius: 50%; object-fit: cover;">
+                </span>
+                <span class="logo-text">Vighneshwar <span class="logo-accent">SFX & Fireworks</span></span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
+                <li role="none"><a href="#effects" class="nav-link" role="menuitem">Our Effects</a></li>
+                <li role="none"><a href="#why-choose" class="nav-link" role="menuitem">Why Choose Us</a></li>
+                <!-- <li role="none"><a href="#about" class="nav-link" role="menuitem">About Us</a></li> -->
+                <li role="none"><a href="#contact" class="nav-link nav-cta" role="menuitem">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="home" class="hero-section" aria-labelledby="home-title">
+            <div class="hero-bg" aria-hidden="true">
+                <video class="hero-video" autoplay muted loop playsinline poster="images/concert-1.jpg">
+                    <source src="videos/concert-1.mp4" type="video/mp4">
+                </video>
+                <div class="hero-particles" id="heroParticles"></div>
+                <div class="hero-gradient"></div>
+                <div class="hero-shapes" id="heroShapes"></div>
+            </div>
+            
+            <div class="hero-content container">
+                <div class="hero-badge" aria-hidden="true">
+                    <span class="badge-spark" aria-hidden="true"></span>
+                    <span>Vighneshwar SFX & Fireworks Company</span>
+                    <span class="badge-spark" aria-hidden="true"></span>
+                </div>
+                
+                <h1 id="home-title" class="hero-title">
+                    <span class="title-line">Transforming</span>
+                    <span class="title-line title-accent">Celebrations</span>
+                    <span class="title-line">Into</span>
+                    <span class="title-line title-gold">Spectacular Memories</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    From royal weddings to epic concerts, corporate excellence to grand festivals — 
+                    we create breathtaking experiences with world-class SFX, pyrotechnics & fireworks.
+                </p>
+                
+                <!-- <div class="hero-stats" aria-label="Company statistics">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="8">1 Year</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-divider" aria-hidden="true"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="500">35+</span>
+                        <span class="stat-label">Events Delivered</span>
+                    </div>
+                    <div class="stat-divider" aria-hidden="true"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">7+</span>
+                        <span class="stat-label">Team Members</span>
+                    </div>
+                </div>
+                 -->
+                <div class="hero-actions">
+                    <a href="#services" class="btn btn-primary">
+                        <span>Explore Services</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <!-- <a href="#gallery" class="btn btn-secondary">
+                        <span>View Our Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </a> -->
+                    <a href="#gallery" class="btn btn-secondary">
+                        <span>View Our Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path>
+                            <path d="M2 12h20"></path>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="hero-trust" aria-label="Trusted by">
+                    <span class="trust-label">Trusted by leading brands & venues</span>
+                    <div class="trust-logos" aria-hidden="true">
+                        <div class="trust-logo">Excellence in Every Event</div>
+                        <div class="trust-logo">Crafted to Perfection</div>
+                        <div class="trust-logo">Stress-Free Celebrations</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-scroll" id="heroScroll" aria-label="Scroll down">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <path d="M12 5v14M19 12l-7 7-7-7"/>
+                </svg>
+            </div>
+        </section>
+
+        <section class="event-showcase" aria-labelledby="events-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-badge" aria-hidden="true"><span></span>Our Event Specialties<span></span></span>
+                    <h2 id="events-title" class="section-title">Crafting Extraordinary Experiences</h2>
+                    <p class="section-subtitle">From intimate celebrations to grand spectacles, we tailor every effect to your vision</p>
+                </header>
+                
+                <div class="event-grid">
+<article class="event-card" data-event="wedding">
+                        <div class="event-media">
+                            <video class="event-video" autoplay muted loop playsinline>
+                                <source src="videos/wedding/wedding-1.mp4" type="video/mp4">
+                            </video>
+                            <div class="event-glow" aria-hidden="true"></div>
+                        </div>
+                        <div class="event-content">
+                            <span class="event-tag">Weddings</span>
+                            <h3 class="event-title">Dream Weddings</h3>
+                            <p class="event-desc">Your celebration deserves a royal touch. We design breathtaking wedding experiences with luxury SFX, cold pyrotechnics, grand entries, and unforgettable moments that become timeless memories.</p>
+                            <ul class="event-features">
+                                <li>✨ Cold Pyrotechnics</li>
+                                <li>💫 Grand Entry Effects</li>
+                                <li>💍 Sparkular Displays</li>
+                                <li>🌟 Custom Wedding SFX</li>
+                            </ul>
+                            <a href="#services" class="event-link">Explore Wedding Services <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        </div>
+                    </article>
+                    
+<article class="event-card" data-event="concert">
+                        <div class="event-media">
+                            <video class="event-video" autoplay muted loop playsinline>
+                                <source src="videos/concert/concert-1.mp4" type="video/mp4">
+                            </video>
+                            <div class="event-glow" aria-hidden="true"></div>
+                        </div>
+                        <div class="event-content">
+                            <span class="event-tag">Concerts</span>
+                            <h3 class="event-title">Epic Concert Nights</h3>
+                            <p class="event-desc">More than a concert — a complete experience. Stunning visual effects, powerful sound, and epic fireworks designed to captivate every audience with passion and precision.</p>
+                            <ul class="event-features">
+                                <li>💨 CO₂ Jet Effects</li>
+                                <li>🔥 Flame Projectors</li>
+                                <li>⚡ Synchronized Pyro</li>
+                                <li>🎭 Stage SFX Design</li>
+                            </ul>
+                            <a href="#services" class="event-link">View Concert Solutions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        </div>
+                    </article>
+                    
+<article class="event-card" data-event="festival">
+                        <div class="event-media">
+                            <video class="event-video" autoplay muted loop playsinline>
+                                <source src="videos/fastival/fastival-1.mp4" type="video/mp4">
+                            </video>
+                            <div class="event-glow" aria-hidden="true"></div>
+                        </div>
+                        <div class="event-content">
+                            <span class="event-tag">Festivals</span>
+                            <h3 class="event-title">Festival of India</h3>
+                            <p class="event-desc">Celebrating India's spirit with spectacular SFX. Brilliant fireworks that light up every festival, blending tradition with world-class visual effects to create magical moments for every celebration.</p>
+                            <ul class="event-features">
+                                <li>🪔 Diwali Fireworks</li>
+                                <li>🎨 Holi Color Cannons</li>
+                                <li>🕉️ Traditional Effects</li>
+                                <li>✨ Grand Finale Shows</li>
+                            </ul>
+                            <a href="#effects" class="event-link">Discover Festival Effects <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        </div>
+                    </article>
+                    
+<article class="event-card" data-event="corporate">
+                        <div class="event-media">
+                            <video class="event-video" autoplay muted loop playsinline>
+                                <source src="videos/corporate/corporate-1.mp4" type="video/mp4">
+                            </video>
+                            <div class="event-glow" aria-hidden="true"></div>
+                        </div>
+                        <div class="event-content">
+                            <span class="event-tag">Corporate</span>
+                            <h3 class="event-title">Corporate Events</h3>
+                            <p class="event-desc">Professional events with spectacular effects. Advanced SFX & fireworks for corporate excellence, creating powerful brand experiences where innovation meets flawless execution.</p>
+                            <ul class="event-features">
+                                <li>🏆 Award Ceremony FX</li>
+                                <li>🚀 Product Launch Effects</li>
+                                <li>🎪 Conference SFX</li>
+                                <li>🤝 Brand Activation</li>
+                            </ul>
+                            <a href="#services" class="event-link">Corporate Solutions <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="services" class="services-section" aria-labelledby="services-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-badge" aria-hidden="true"><span></span>Our Services<span></span></span>
+                    <h2 id="services-title" class="section-title">Comprehensive SFX & Event Solutions</h2>
+                    <p class="section-subtitle">End-to-end services from concept to execution for every type of celebration</p>
+                </header>
+                
+<article class="service-card" data-service="sfx-installation">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">SFX Installation</h3>
+                        <p class="service-subtitle">The Art of Spectacular Effects</p>
+                        <p class="service-desc">Transform your venue with world-class SFX installations engineered for clubs, lounges, and entertainment spaces. From CO₂ jets to intelligent effects, we create immersive experiences that leave a lasting impression.</p>
+                        <ul class="service-features">
+                            <li>CO₂ Jet Systems</li>
+                            <li>Intelligent Effect Programming</li>
+                            <li>DMX-Controlled Installations</li>
+                            <li>Venue Integration Design</li>
+                        </ul>
+                        <span class="service-tag">Clubs • Lounges • Venues</span>
+                    </article>
+                    
+                    <article class="service-card" data-service="imperial-nuptials">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Imperial Nuptials</h3>
+                        <p class="service-subtitle">Crafting Weddings Beyond Imagination</p>
+                        <p class="service-desc">Every celebration deserves a royal touch. We design breathtaking wedding experiences with luxury SFX, cold pyrotechnics, grand entries, and unforgettable moments that become timeless memories.</p>
+                        <ul class="service-features">
+                            <li>Cold Pyrotechnics (Sparkular)</li>
+                            <li>Grand Entry Effects</li>
+                            <li>First Dance SFX</li>
+                            <li>Custom Wedding Packages</li>
+                        </ul>
+                        <span class="service-tag">Weddings • Receptions • Engagements</span>
+                    </article>
+                    
+                    <article class="service-card" data-service="executive-experiences">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <path d="M3 3h18v18H3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Executive Experiences</h3>
+                        <p class="service-subtitle">Where Business Meets Brilliance</p>
+                        <p class="service-desc">Elevate conferences, award nights, product launches, and corporate celebrations with flawless production, premium special effects, and impeccable event execution.</p>
+                        <ul class="service-features">
+                            <li>Award Ceremony Effects</li>
+                            <li>Product Launch Reveals</li>
+                            <li>Conference Stage SFX</li>
+                            <li>Brand Activation Experiences</li>
+                        </ul>
+                        <span class="service-tag">Conferences • Launches • Awards</span>
+                    </article>
+                    
+                    <article class="service-card" data-service="celebrity-performance">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 2v20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Celebrity Performance</h3>
+                        <p class="service-subtitle">Experience Stardom Like Never Before</p>
+                        <p class="service-desc">Witness extraordinary performances enhanced with world-class production, immersive special effects, and seamless execution — where every moment becomes a standing ovation.</p>
+                        <ul class="service-features">
+                            <li>Artist Rider Fulfillment</li>
+                            <li>Custom Stage Effects</li>
+                            <li>Tour Production Support</li>
+                            <li>Live Broadcast SFX</li>
+                        </ul>
+                        <span class="service-tag">Concerts • Tours • Live Shows</span>
+                    </article>
+                    
+                    <article class="service-card" data-service="indian-festivals">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Indian Festivals</h3>
+                        <p class="service-subtitle">Tradition. Grandeur. Celebration.</p>
+                        <p class="service-desc">We blend India's rich cultural heritage with cutting-edge special effects to create breathtaking festival experiences filled with devotion, elegance, and unforgettable moments.</p>
+                        <ul class="service-features">
+                            <li>Diwali Grand Fireworks</li>
+                            <li>Holi Color Cannons</li>
+                            <li>Navratri/Dussehra Effects</li>
+                            <li>Religious Festival SFX</li>
+                        </ul>
+                        <span class="service-tag">Diwali • Holi • Navratri • All Festivals</span>
+                    </article>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="services" class="services-section" aria-labelledby="services-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-badge" aria-hidden="true"><span></span>Our Services<span></span></span>
+                    <h2 id="services-title" class="section-title">Comprehensive SFX & Event Solutions</h2>
+                    <p class="section-subtitle">End-to-end services from concept to execution for every type of celebration</p>
+                </header>
+                
+                <div class="services-grid">
+                    <article class="service-card" data-service="sfx-installation">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">SFX Installation</h3>
+                        <p class="service-subtitle">The Art of Spectacular Effects</p>
+                        <p class="service-desc">Transform your venue with world-class SFX installations engineered for clubs, lounges, and entertainment spaces. From CO₂ jets to intelligent effects, we create immersive experiences that leave a lasting impression.</p>
+                        <ul class="service-features">
+                            <li>CO₂ Jet Systems</li>
+                            <li>Intelligent Effect Programming</li>
+                            <li>DMX-Controlled Installations</li>
+                            <li>Venue Integration Design</li>
+                        </ul>
+                        <span class="service-tag">Clubs • Lounges • Venues</span>
+                    </article>
+                    
+                    <article class="service-card" data-service="imperial-nuptials">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Imperial Nuptials</h3>
+                        <p class="service-subtitle">Crafting Weddings Beyond Imagination</p>
+                        <p class="service-desc">Every celebration deserves a royal touch. We design breathtaking wedding experiences with luxury SFX, cold pyrotechnics, grand entries, and unforgettable moments that become timeless memories.</p>
+                        <ul class="service-features">
+                            <li>Cold Pyrotechnics (Sparkular)</li>
+                            <li>Grand Entry Effects</li>
+                            <li>First Dance SFX</li>
+                            <li>Custom Wedding Packages</li>
+                        </ul>
+                        <span class="service-tag">Weddings • Receptions • Engagements</span>
+                    </article>
+                    
+                    <article class="service-card" data-service="executive-experiences">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                                <path d="M3 3h18v18H3z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Executive Experiences</h3>
+                        <p class="service-subtitle">Where Business Meets Brilliance</p>
+                        <p class="service-desc">Elevate conferences, award nights, product launches, and corporate celebrations with flawless production, premium special effects, and impeccable event execution.</p>
+                        <ul class="service-features">
+                            <li>Award Ceremony Effects</li>
+                            <li>Product Launch Reveals</li>
+                            <li>Conference Stage SFX</li>
+                            <li>Brand Activation Experiences</li>
+                        </ul>
+                        <span class="service-tag">Conferences • Launches • Awards</span>
+                    </article>
+                    
+                    <article class="service-card" data-service="celebrity-performance">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 2v20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Celebrity Performance</h3>
+                        <p class="service-subtitle">Experience Stardom Like Never Before</p>
+                        <p class="service-desc">Witness extraordinary performances enhanced with world-class production, immersive special effects, and seamless execution — where every moment becomes a standing ovation.</p>
+                        <ul class="service-features">
+                            <li>Artist Rider Fulfillment</li>
+                            <li>Custom Stage Effects</li>
+                            <li>Tour Production Support</li>
+                            <li>Live Broadcast SFX</li>
+                        </ul>
+                        <span class="service-tag">Concerts • Tours • Live Shows</span>
+                    </article>
+                    
+                    <article class="service-card" data-service="indian-festivals">
+                        <div class="service-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="service-title">Indian Festivals</h3>
+                        <p class="service-subtitle">Tradition. Grandeur. Celebration.</p>
+                        <p class="service-desc">We blend India's rich cultural heritage with cutting-edge special effects to create breathtaking festival experiences filled with devotion, elegance, and unforgettable moments.</p>
+                        <ul class="service-features">
+                            <li>Diwali Grand Fireworks</li>
+                            <li>Holi Color Cannons</li>
+                            <li>Navratri/Dussehra Effects</li>
+                            <li>Religious Festival SFX</li>
+                        </ul>
+                        <span class="service-tag">Diwali • Holi • Navratri • All Festivals</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="effects" class="effects-section" aria-labelledby="effects-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-badge" aria-hidden="true"><span></span>Our Effects<span></span></span>
+                    <h2 id="effects-title" class="section-title">Spectacular Visual Effects Arsenal</h2>
+                    <p class="section-subtitle">World-class equipment, professional execution, and unforgettable visual impact</p>
+                </header>
+                
+                <div class="effects-grid">
+                    <article class="effect-card" data-effect="pyrotechnics">
+                        <div class="effect-media">
+                            <div class="effect-glow" aria-hidden="true"></div>
+                            <div class="effect-icon" aria-hidden="true">
+                                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    <path d="M12 8v8M8 12h8"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="effect-content">
+                            <h3 class="effect-title">Traditional Pyrotechnics</h3>
+                            <p class="effect-desc">Celebrate every moment with brilliant sparkul effects and grand pyrotechnics. Crafted for unforgettable weddings and live shows with premium entertainment and flawless execution.</p>
+                            <div class="effect-highlights">
+                                <span class="highlight">Cold Fireworks (Sparkular)</span>
+                                <span class="highlight">Stage Pyrotechnics</span>
+                                <span class="highlight">Wedding Safe Effects</span>
+                                <span class="highlight">Indoor/Outdoor Safe</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="effect-card" data-effect="co2">
+                        <div class="effect-media">
+                            <div class="effect-glow" aria-hidden="true"></div>
+                            <div class="effect-icon" aria-hidden="true">
+                                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2v20M12 2a10 10 0 0 1 0 20M12 2a10 10 0 0 0 0 20"/>
+                                    <path d="M2 12h20M5 12a7 7 0 0 1 14 0"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="effect-content">
+                            <h3 class="effect-title">CO₂ FX</h3>
+                            <p class="effect-desc">Premium CO₂ Jets & Guns for breathtaking stage effects. Engineered for maximum visual impact and excitement with professional execution and world-class safety standards.</p>
+                            <div class="effect-highlights">
+                                <span class="highlight">CO₂ Jet Machines</span>
+                                <span class="highlight">Handheld CO₂ Guns</span>
+                                <span class="highlight">Cryo Effects</span>
+                                <span class="highlight">DMX Controllable</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="effect-card" data-effect="flame">
+                        <div class="effect-media">
+                            <div class="effect-glow" aria-hidden="true"></div>
+                            <div class="effect-icon" aria-hidden="true">
+                                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M8.5 14.5A2.5 2.5 0 0 1 11 12c0-1.38-.5-2.01-1.5-3A5 5 0 1 1 16 12c0 1.38-.5 2.01 1.5 3a2.5 2.5 0 0 1-5 0z"/>
+                                    <path d="M12 2v20M12 2a10 10 0 0 1 0 20M12 2a10 10 0 0 0 0 20"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="effect-content">
+                            <h3 class="effect-title">Flame FX</h3>
+                            <p class="effect-desc">Bring energy to every celebration. Premium Flame FX crafted for unforgettable events with high-performance effects and professional execution. Safe, reliable, and visually spectacular.</p>
+                            <div class="effect-highlights">
+                                <span class="highlight">Flame Projectors</span>
+                                <span class="highlight">Fire Columns</span>
+                                <span class="highlight">DMX Synchronized</span>
+                                <span class="highlight">Safety Certified</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="effect-card" data-effect="fireworks">
+                        <div class="effect-media">
+                            <div class="effect-glow" aria-hidden="true"></div>
+                            <div class="effect-icon" aria-hidden="true">
+                                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="effect-content">
+                            <h3 class="effect-title">Fireworks</h3>
+                            <p class="effect-desc">Illuminate celebrations with breathtaking fireworks that transform every moment into a spectacular memory. From elegant aerial displays to synchronized pyrotechnic performances, every show is designed to amaze.</p>
+                            <div class="effect-highlights">
+                                <span class="highlight">Aerial Displays</span>
+                                <span class="highlight">Synchronized Shows</span>
+                                <span class="highlight">Music Choreography</span>
+                                <span class="highlight">Custom Design</span>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="effect-card" data-effect="smoke-bubble">
+                        <div class="effect-media">
+                            <div class="effect-glow" aria-hidden="true"></div>
+                            <div class="effect-icon" aria-hidden="true">
+                                <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 8v8M8 12h8"/>
+                                    <circle cx="18" cy="6" r="2"/>
+                                    <circle cx="6" cy="18" r="2"/>
+                                    <circle cx="18" cy="18" r="1.5"/>
+                                    <circle cx="6" cy="6" r="1.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="effect-content">
+                            <h3 class="effect-title">Smoke & Bubble FX</h3>
+                            <p class="effect-desc">Bring magic to every celebration. Smoke-filled bubbles create a breathtaking atmosphere perfect for stage shows, weddings, and live events. Crafting cinematic moments with stunning visual effects.</p>
+                            <div class="effect-highlights">
+                                <span class="highlight">Smoke-Filled Bubbles</span>
+                                <span class="highlight">Fog/Haze Machines</span>
+                                <span class="highlight">Low-Lying Fog</span>
+                                <span class="highlight">Bubble Machines</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-choose" class="why-choose-section" aria-labelledby="why-choose-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-badge" aria-hidden="true"><span></span>Why Choose Us<span></span></span>
+                    <h2 id="why-choose-title" class="section-title">Excellence in Every Spark</h2>
+                    <p class="section-subtitle">Five pillars that make us the trusted choice for spectacular events</p>
+                </header>
+                
+                <div class="why-choose-grid">
+                    <article class="why-card" data-reason="equipment">
+                        <div class="why-number" aria-hidden="true"></div>
+                        <div class="why-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Advanced Equipment & Latest Technology</h3>
+                        <p class="why-desc">We use industry-grade SFX machines including CO₂ Jets, Cold Pyro Machines, Sparkular Systems, Flame Projectors, Confetti Blasters, and DMX-controlled equipment. Every setup delivers stunning visual effects with reliable performance.</p>
+                        <!-- <ul class="why-equipment">
+                            <li>CO₂ Jet Machines</li>
+                            <li>Sparkular (Cold Fireworks)</li>
+                            <li>Confetti Blowers</li>
+                            <li>Flame Projectors</li>
+                            <li>Bubble Machines</li>
+                            <li>Smoke/Fog Machines</li>
+                            <li>Laser Light Systems</li>
+                            <li>DMX Controllers</li>
+                            <li>Moving Head Lights</li>
+                            <li>Stage Truss & Lighting</li>
+                        </ul> -->
+                    </article>
+                    
+                    <article class="why-card" data-reason="team">
+                        <div class="why-number" aria-hidden="true"></div>
+                        <div class="why-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Experienced Team & Flawless Execution</h3>
+                        <p class="why-desc">Our skilled technicians handle every project with precision and professionalism. From planning and installation to live operation, we ensure every effect is perfectly synchronized for a smooth and unforgettable event experience.</p>
+                    </article>
+                    
+                    <article class="why-card" data-reason="safety">
+                        <div class="why-number" aria-hidden="true"></div>
+                        <div class="why-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Safety First, Always</h3>
+                        <p class="why-desc">Safety is at the core of everything we do. All machines are thoroughly tested before every event, and our team follows strict safety protocols to guarantee secure and worry-free performances.</p>
+                    </article>
+                    
+                    <article class="why-card" data-reason="custom">
+                        <div class="why-number" aria-hidden="true"></div>
+                        <div class="why-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Customized Solutions for Every Event</h3>
+                        <p class="why-desc">Whether it's a luxury wedding, live concert, corporate event, festival, or private celebration, we provide customized SFX and fireworks solutions that match your venue, theme, and budget perfectly.</p>
+                    </article>
+                    
+                    <article class="why-card" data-reason="quality">
+                        <div class="why-number" aria-hidden="true"></div>
+                        <div class="why-icon" aria-hidden="true">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="why-title">Trusted Quality & Unforgettable Experiences</h3>
+                        <p class="why-desc">With premium equipment, innovative technology, and a commitment to excellence, we transform ordinary events into extraordinary experiences. Our goal is to create moments that leave a lasting impression on every guest.</p>
+                    </article>
+                </div>
+                
+                <div class="machines-showcase" aria-label="Equipment Gallery">
+                    <h3 class="machines-title">Our Equipment Arsenal</h3>
+                    <div class="machines-grid card-grid card-grid--machines" id="machinesGrid" aria-label="Machine images">
+                        <div class="machine-item has-image" data-machine="co2-jet">
+                            <img class="machine-image" src="images/CO2-Jet-Machine.jpg" alt="CO₂ Jet Machine" loading="lazy">
+                            <div class="machine-label">CO₂ Jet Machine</div>
+                            <div class="machine-placeholder">CO₂ Jet Machine</div>
+                        </div>
+                        <div class="machine-item has-image" data-machine="sparkular">
+                            <img class="machine-image" src="images/sparkular.jpg" alt="Sparkular Cold Fireworks Machine" loading="lazy">
+                            <div class="machine-label">Sparkular Machine</div>
+                            <div class="machine-placeholder">Sparkular Machine</div>
+                        </div>
+                        <div class="machine-item has-image" data-machine="confetti">
+                            <img class="machine-image" src="images/confetti.jpg" alt="Confetti Blower Machine" loading="lazy">
+                            <div class="machine-label">Confetti Blower</div>
+                            <div class="machine-placeholder">Confetti Blower</div>
+                        </div>
+                        <div class="machine-item has-image" data-machine="flame">
+                            <img class="machine-image" src="images/flame.webp" alt="Flame Projector Machine" loading="lazy">
+                            <div class="machine-label">Flame Projector</div>
+                            <div class="machine-placeholder">Flame Projector</div>
+                        </div>
+                        <div class="machine-item has-image" data-machine="bubble">
+                            <img class="machine-image" src="images/bubble.webp" alt="Bubble Machine" loading="lazy">
+                            <div class="machine-label">Bubble Machine</div>
+                            <div class="machine-placeholder">Bubble Machine</div>
+                        </div>
+                        <div class="machine-item has-image" data-machine="fog">
+                            <img class="machine-image" src="images/fog.webp" alt="Smoke/Fog Machine" loading="lazy">
+                            <div class="machine-label">Smoke / Fog Machine</div>
+                            <div class="machine-placeholder">Smoke/Fog Machine</div>
+                        </div>
+                        <div class="machine-item has-image" data-machine="laser">
+                            <img class="machine-image" src="images/laser.webp" alt="Laser Light System" loading="lazy">
+                            <div class="machine-label">Laser Light System</div>
+                            <div class="machine-placeholder">Laser Light System</div>
+                        </div>
+                        <div class="machine-item has-image" data-machine="dmx">
+                            <img class="machine-image" src="images/dmx.webp" alt="DMX Controller" loading="lazy">
+                            <div class="machine-label">DMX Controller</div>
+                            <div class="machine-placeholder">DMX Controller</div>
+                        </div>
+                        <div class="machine-item has-image" data-machine="moving-head">
+                            <img class="machine-image" src="images/moving-head.jpg" alt="Moving Head Lights" loading="lazy">
+                            <div class="machine-label">Moving Head Lights</div>
+                            <div class="machine-placeholder">Moving Head Lights</div>
+                        </div>
+                        <div class="machine-item has-image" data-machine="truss">
+                            <img class="machine-image" src="images/truss.jpg" alt="Stage Truss & Lighting Setup" loading="lazy">
+                            <div class="machine-label">Stage Truss Setup</div>
+                            <div class="machine-placeholder">Stage Truss Setup</div>
+                        </div>
+</div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        </section>
+
+        </section>
+
+<section id="gallery" class="gallery-section" aria-labelledby="gallery-title">
+            <div class="gallery-particles" id="galleryParticles"></div>
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-badge" aria-hidden="true"><span></span>Our Work Gallery<span></span></span>
+                    <h2 id="gallery-title" class="section-title">Spectacular Moments Captured</h2>
+                    <p class="section-subtitle">Real events, real magic — watch our SFX and fireworks in action</p>
+                </header>
+
+                <!-- Wedding Gallery -->
+                <div class="gallery-category" data-category="weddings">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                        </span>
+                        <h3 class="category-title" data-text="Weddings">Weddings</h3>
+                        <span class="category-count">4 Cinematic Moments</span>
+                    </div>
+                    <div class="gallery-grid">
+                        <article class="gallery-card" data-index="0">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/wedding/wedding-1.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">Haldi Ceremony </span>
+                            </div>
+                        </article>
+                        <article class="gallery-card" data-index="1">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/wedding/wedding-2.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">Var Mala</span>
+                            </div>
+                        </article>
+                        <article class="gallery-card" data-index="2">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/wedding/wedding-3.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">Cold Fireworks</span>
+                            </div>
+                        </article>
+                        <article class="gallery-card" data-index="3">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/wedding/wedding-4.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">Sparkular Magic</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Concert Gallery -->
+                <div class="gallery-category" data-category="concerts">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M9 18V5l12-2v13M9 18c0 2.5 2 4.5 4.5 4.5s4.5-2 4.5-4.5"/>
+                            </svg>
+                        </span>
+                        <h3 class="category-title" data-text="Concerts">Concerts</h3>
+                        <span class="category-count">2 Cinematic Moments</span>
+                    </div>
+                    <div class="gallery-grid">
+                        <article class="gallery-card" data-index="0">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/concert/concert-1.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">Main Stage</span>
+                            </div>
+                        </article>
+                        <article class="gallery-card" data-index="1">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/concert/concert-2.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">CO₂ Effects</span>
+                            </div>
+                        </article>
+                        <article class="gallery-card" data-index="2">
+                            <img class="card-media" src="images/concert/VideoCapture_20260714-133506.jpg" alt="Concert pyro burst" loading="lazy">
+                            <div class="card-overlay">
+                                <div class="zoom-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
+                                <span class="card-label">Pyro Burst</span>
+                            </div>
+                        </article>
+                        <article class="gallery-card" data-index="3">
+                            <img class="card-media" src="images/concert/VideoCapture_20260714-133517.jpg" alt="Concert laser display" loading="lazy">
+                            <div class="card-overlay">
+                                <div class="zoom-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
+                                <span class="card-label">Laser Display</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Festival Gallery -->
+                <div class="gallery-category" data-category="festivals">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 2v20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                            </svg>
+                        </span>
+                        <h3 class="category-title" data-text="Festivals">Festivals</h3>
+                        <span class="category-count">4 Cinematic Moments</span>
+                    </div>
+                    <div class="gallery-grid">
+                        <article class="gallery-card" data-index="0">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/fastival/fastival-1.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">Ganpati Aagman</span>
+                            </div>
+                        </article>
+                        <article class="gallery-card" data-index="1">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/fastival/fastival-2.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">Chhatrapati Shivaji Maharaj</span>
+                            </div>
+                        </article>
+                        <article class="gallery-card" data-index="2">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/fastival/fastival-3.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">Ganpati Aagman</span>
+                            </div>
+                        </article>
+                        <article class="gallery-card" data-index="3">
+                            <img class="card-media" src="images/fastival/VideoCapture_20260714-133435.jpg" alt="Festival grand fireworks" loading="lazy">
+                            <div class="card-overlay">
+                                <div class="zoom-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></div>
+                                <span class="card-label">Grand Fireworks</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Corporate Gallery -->
+                <div class="gallery-category" data-category="corporate">
+                    <div class="category-header">
+                        <span class="category-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </span>
+                        <h3 class="category-title" data-text="Corporate">Corporate</h3>
+                        <span class="category-count">4 Cinematic Moments</span>
+                    </div>
+                    <div class="gallery-grid">
+                        <article class="gallery-card" data-index="0">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/corporate/corporate-1.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">Night Concert</span>
+                            </div>
+                        </article>
+                        <article class="gallery-card" data-index="1">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/corporate/corporate-2.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">Night Concert</span>
+                            </div>
+                        </article>
+                        <article class="gallery-card" data-index="2">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/corporate/corporate-3.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">Conference Stage</span>
+                            </div>
+                        </article>
+                        <article class="gallery-card" data-index="3">
+                            <video class="card-media" muted playsinline preload="metadata" autoplay loop>
+                                <source src="videos/corporate/corporate-4.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-overlay">
+                                <div class="play-btn" aria-hidden="true"><svg width="56" height="56" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></div>
+                                <span class="card-label">Group Dance</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section" aria-labelledby="contact-title">
+            <div class="container">
+                <header class="section-header">
+                    <span class="section-badge" aria-hidden="true"><span></span>Get In Touch<span></span></span>
+                    <h2 id="contact-title" class="section-title">Let's Create Something Spectacular</h2>
+                    <p class="section-subtitle">Ready to transform your event? Connect with us directly via WhatsApp for instant consultation</p>
+                </header>
+                
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Visit Us</h3>
+                                <address>C-313 Nathalal Shopping Center<br>Near Shreeji Hospital<br>Panigate, Vadodara 390019<br>Gujarat, India</address>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Call Us</h3>
+                                <div class="contact-phones">
+                                    <a href="tel:+918401381413" class="phone-link">
+                                        <span class="phone-name">Pratham</span>
+                                        <span class="phone-number">+91 84013 81413</span>
+                                    </a>
+                                    <a href="tel:+919106363405" class="phone-link">
+                                        <span class="phone-name">Vraj</span>
+                                        <span class="phone-number">+91 91063 63405</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-card">
+                            <div class="contact-icon" aria-hidden="true">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                    <path d="M8 21h8M12 17v4"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Follow Us</h3>
+                                <div class="social-links">
+                                    <a href="https://www.instagram.com/vighneshwar_.sfx?igsh=eWZzZnBvd2xxZmd5" target="_blank" rel="noopener noreferrer" class="social-link instagram" aria-label="Follow us on Instagram">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                            <rect x="2" y="2" width="20" height="20" rx="5"/>
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                                        </svg>
+                                        <span>@vighneshwar_.sfx</span>
+                                    </a>
+                                    <a href="https://share.google/kLAJ3WgGpTleH9f4j" target="_blank" rel="noopener noreferrer" class="social-link google" aria-label="View our Google Business profile">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                            <circle cx="12" cy="12" r="10"/>
+                                            <path d="M2 12h20"/>
+                                            <path d="M12 2a15 15 0 0 1 0 20"/>
+                                            <path d="M12 2a15 15 0 0 0 0 20"/>
+                                        </svg>
+                                        <span>Google Business</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-cta">
+                        <div class="contact-cta-card">
+                            <div class="cta-icon" aria-hidden="true">
+                                <center>
+                                    <img src="images/whatsapp-logo.png" alt="WhatsApp" width="64" height="64" style="border-radius: 16px; object-fit: contain;">
+                                </center>
+                            </div>
+                            <h3>Chat with Us on WhatsApp</h3>
+                            <p>Get instant consultation, share your vision, and receive a custom quote — all in one chat.</p>
+                            <a href="https://wa.me/918401381413?text=Hello%20Vighneshwar%20SFX%20%26%20Fireworks%2C%20I%27d%20like%20to%20discuss%20my%20event%20requirements." class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                                <img src="images/whatsapp-logo.png" alt="WhatsApp" width="24" height="24" style="border-radius: 50%; object-fit: contain;">
+                                <span>Start WhatsApp Chat</span>
+                            </a>
+                            <p class="cta-note">Available 10AM - 8PM IST • Quick Response</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo" aria-label="Vighneshwar SFX & Fireworks Company - Home">
+                        <!-- <span class="logo-icon" aria-hidden="true"> -->
+                            <!-- <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16" cy="16" r="14" stroke="#D4A843" stroke-width="2"/>
+                                <path d="M16 4L18 12L26 12L19 17L21 25L16 20L11 25L13 17L6 12L14 12L16 4Z" fill="#D4A843"/>
+                            </svg> -->                            
+                        <!-- </span> -->
+                         <span class="logo-icon" aria-hidden="true">
+                            <img src="images/Main-logo.jpeg" alt="Vighneshwar SFX Logo" width="40" height="40" style="border-radius: 50%; object-fit: cover;">
+                        </span>
+                        <span>Vighneshwar <span class="logo-accent">SFX & Fireworks</span></span>
+                    </a>
+                    <p class="footer-tagline">Igniting Dreams. Creating Legends.</p>
+                    <p class="footer-desc">Transforming celebrations with world-class SFX, pyrotechnics & fireworks since 2025.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/vighneshwar_.sfx?igsh=eWZzZnBvd2xxZmd5" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://share.google/kLAJ3WgGpTleH9f4j" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Google Business">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="4" width="18" height="16" rx="2"/>
+                            <path d="M3 8h18"/>
+                            <circle cx="7" cy="6" r="0.5" fill="currentColor"/>
+                            <circle cx="10" cy="6" r="0.5" fill="currentColor"/>
+                            <circle cx="13" cy="6" r="0.5" fill="currentColor"/>
+                        </svg>
+                    </a>
+                        <a href="tel:+918401381413" class="social-link" aria-label="Call Pratham">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <div class="footer-links">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">SFX Installation</a></li>
+                            <li><a href="#services">Imperial Nuptials</a></li>
+                            <li><a href="#services">Executive Experiences</a></li>
+                            <li><a href="#services">Celebrity Performance</a></li>
+                            <li><a href="#services">Indian Festivals</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Effects</h4>
+                        <ul>
+                            <li><a href="#effects">Traditional Pyrotechnics</a></li>
+                            <li><a href="#effects">CO₂ FX</a></li>
+                            <li><a href="#effects">Flame FX</a></li>
+                            <li><a href="#effects">Fireworks</a></li>
+                            <li><a href="#effects">Smoke & Bubble FX</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Company</h4>
+                        <ul>
+                            <!-- <li><a href="#about">About Us</a></li>  -->
+                            <li><a href="#why-choose">Why Choose Us</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li><address>C-313 Nathalal Shopping Center<br>Near Shreeji Hospital<br>Panigate, Vadodara 390019</address></li>
+                            <li><a href="tel:+918401381413">Pratham: +91 84013 81413</a></li>
+                            <li><a href="tel:+919106363405">Vraj: +91 91063 63405</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 Vighneshwar SFX & Fireworks Company. All rights reserved.</p>
+                    <p>Founded by Chauhan Pratham | Safety First, Always</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+        <span class="scroll-top-tooltip">Scroll to Top</span>
+    </button>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/918401381413?text=Hello%20Vighneshwar%20SFX%20%26%20Fireworks%2C%20I%27d%20like%20to%20discuss%20my%20event%20requirements." class="whatsapp-float" id="whatsappFloat" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <center>
+            <img src="images/whatsapp-logo.png" alt="WhatsApp" width="28" height="28" style="border-radius: 50%;">
+        </center>
+        <span class="whatsapp-tooltip">Chat on WhatsApp</span>
+    </a>
+
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-label="Notifications"></div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
