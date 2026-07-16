@@ -1353,18 +1353,27 @@ class ScrollReveal {
       rootMargin: '0px 0px -50px 0px'
     });
     
-    this.elements.forEach(el => this.observer.observe(el));
-    
-    // Check for elements already in viewport (e.g., on initial load)
-    this.elements.forEach(el => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        el.classList.add('visible');
-        this.observer.unobserve(el);
-      }
-    });
-  }
-}
+this.elements.forEach(el => this.observer.observe(el));
+     
+     // Check for elements already in viewport (e.g., on initial load)
+     this.elements.forEach(el => {
+       const rect = el.getBoundingClientRect();
+       if (rect.top < window.innerHeight && rect.bottom > 0) {
+         el.classList.add('visible');
+         this.observer.unobserve(el);
+       }
+     });
+
+     // Fallback: force visibility after 2s if IntersectionObserver fails
+     setTimeout(() => {
+       this.elements.forEach(el => {
+         if (!el.classList.contains('visible')) {
+           el.classList.add('visible');
+         }
+       });
+     }, 2000);
+   }
+ }
 
 // ==========================================================================
 // DYNAMIC GALLERY - SPLIT LAYOUT WITH SCROLL EXPANSION
